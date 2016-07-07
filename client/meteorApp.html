@@ -1,0 +1,26 @@
+<head>
+  <title>Who Goes There?</title>
+</head>
+<body>
+  <div class="container">
+    {{> content}}
+  </div>
+
+
+    <div class="row">
+    <div class="span6">
+      <div class="well">
+        <h4>Fan of  <a href="https://docs.meteor.com">Meteor</a>? Check in with Twitter to add your name.</h4>
+        {{> loginButtons}}
+      </div>
+      <table class="table">
+         <tr>
+<td>
+  <a target="_blank" href="http://twitter.com/{{userName}}"><img src="{{image}}"/> {{fullName}}</a>
+
+</td>
+</tr>
+      </table>
+    </div>
+  </div>
+</body>
